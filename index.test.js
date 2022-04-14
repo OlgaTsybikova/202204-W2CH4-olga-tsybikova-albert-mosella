@@ -1,31 +1,30 @@
 class SkylabArray {
-  constructor(
-    firstNumber,
-    secondNumber,
-    thirdNumber,
-    forthNumber,
-    fifthNumber
-  ) {
-    this.firstNumber = firstNumber;
-    this.secondNumber = secondNumber;
-    this.thirdNumber = thirdNumber;
-    this.forthNumber = forthNumber;
-    this.fifthNumber = fifthNumber;
+  long;
+  height;
+  width;
+
+  constructor(long, height, width) {
+    this.long = long;
+    this.height = height;
+    this.width = width;
   }
 }
 
 const getLength = (text) => {
-  let textRange = 0;
+  let longitud = 0;
   for (let i = 0; i !== undefined; i++) {
     if (text[i] !== undefined) {
-      textRange++;
+      longitud++;
     }
     if (text[i] === undefined) {
-      return textRange;
+      return longitud;
     }
   }
-  return textRange;
+  return longitud;
 };
+
+const names = new SkylabArray(0, 5, 18);
+names.long = getLength(names);
 
 describe("Given the function getLength", () => {
   describe("When it receives 'Albert'", () => {
