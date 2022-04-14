@@ -29,9 +29,9 @@ const getLength = (text) => {
 
 describe("Given the function getLength", () => {
   describe("When it receives 'Albert'", () => {
-    test("Then it should return 6", () => {
-      const text = "Albert";
-      const expectedResult = 6;
+    test("Then it should return 5", () => {
+      const text = { 0: "Maria", 1: "Albert", 2: "Alex", 3: "Leia", 4: "Max" };
+      const expectedResult = 3;
 
       const result = getLength(text);
 
