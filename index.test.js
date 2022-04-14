@@ -1,12 +1,13 @@
 class SkylabArray {
-  long;
-  height;
-  width;
+  0;
+  1;
+  2;
+  3;
 
   constructor(long, height, width) {
-    this.long = long;
-    this.height = height;
-    this.width = width;
+    this[0] = long;
+    this[0] = height;
+    this[0] = width;
   }
 }
 
